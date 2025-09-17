@@ -42,9 +42,28 @@ class bankaccount:
         except balanceException as error:
             print(f"\nTransfer interruped {error}")
 
-class interestRewardsAcct(bankaccount):
-    def deposit
+class interestRewardsAcct(bankaccount):#when we create a obj of this childe class all the method call in this child class 
+#but here override deposit method of oarent class 
+    def deposit(self,amount):
+        self.balance=self.balance+(amount*1.05)
+        self.getBalance()
+#inherit all the class of parent clas  
+class savingAcct(interestRewardsAcct):
+    def __init__(self,initialAmount,accName):
+        super().__init__(initialAmount,accName)
+        self.fee=5
 
+    def withdraw(self, amount):
+        try:
+            self.viableTransaction(amount+self.fee)
+            self.balance=self.balance-(amount+self.fee)
+            print("\neithdraw complete")
+            self.getBalance()
+        except balanceException as error:
+            print(f"\nwithdraw interrupted: {error}")
+        
+
+     
                 
             
 
