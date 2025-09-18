@@ -16,3 +16,13 @@ def CountDigit(num):
 number = 12345
 print("Number of digits:", CountDigit(number))
 
+
+#count number to another way 
+
+from math import*
+def countdigit(num):
+    return int(log10(num)+1)
+
+
+number=12334
+print("Number of the digit is ",countdigit(number))
