@@ -5,14 +5,47 @@
 # greet()#it show stack overflow error this fun is called again again 
 #we want to reduce the space for this reason we want to give a stop condition 
 
-def fun(count=0):
-    if count == 4:
-        return
-    count += 1
-    fun(count)
-    print("Arman")
+# def fun(count=0):
+#     if count == 4:
+#         return
+#     count += 1
+#     fun(count)
+#     print("Arman")
 
-fun()
+# fun()
+
+#recursion using parameters 
+
+def fun(x,n):
+    if n==0:
+        return
+    print(x)
+    fun(x,n-1)
+
+fun(15,4)
+
+#print 1 to 5 using recursion 
+
+def auto(i,n):
+    if i>n:
+        return
+    print(i)
+    auto(i+1,n)
+
+auto(0,5)
+
+#same code tail recursion it print reverse ot 0 to 5
+
+
+def auto(i,n):
+    if i>n:
+        return
+ 
+    auto(i+1,n)
+    print(i)
+
+auto(0,5)
+
 
 
 
