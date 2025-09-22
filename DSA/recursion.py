@@ -70,10 +70,12 @@
 
 #factorial recursion using by recursion 
 
-def fac(num):
-    if num==0 or num==1:
-        return 1
-    return num*fac(num-1)
+# def fac(num):
+#     if num==0 or num==1:
+#         return 1
+#     return num*fac(num-1)
+
+
 
 
 
