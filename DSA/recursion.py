@@ -16,35 +16,48 @@
 
 #recursion using parameters 
 
-def fun(x,n):
-    if n==0:
-        return
-    print(x)
-    fun(x,n-1)
+# def fun(x,n):
+#     if n==0:
+#         return
+#     print(x)
+#     fun(x,n-1)
 
-fun(15,4)
+# fun(15,4)
 
-#print 1 to 5 using recursion 
+# #print 1 to 5 using recursion 
 
-def auto(i,n):
-    if i>n:
-        return
-    print(i)
-    auto(i+1,n)
+# def auto(i,n):
+#     if i>n:
+#         return
+#     print(i)
+#     auto(i+1,n)
 
-auto(0,5)
+# auto(0,5)
 
-#same code tail recursion it print reverse ot 0 to 5
+# #same code tail recursion it print reverse ot 0 to 5
 
 
-def auto(i,n):
-    if i>n:
-        return
+# def auto(i,n):
+#     if i>n:
+#         return
  
-    auto(i+1,n)
-    print(i)
+#     auto(i+1,n)
+#     print(i)
 
-auto(0,5)
+# auto(0,5)
+
+#parameter and factorial recursion 
+#sum of 1 to N
+
+def summation(total, i, n):
+    if i > n:
+        print(total)
+        return
+    summation(total + i, i + 1, n)
+
+# call function
+summation(0, 1, 5)   # Output = 15
+
 
 
 
