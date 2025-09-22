@@ -60,13 +60,22 @@
 
 #fuctional recursion 
 
-def sum_n(n):
-    if n == 1:
-        return 1
-    return n + sum_n(n - 1)
+# def sum_n(n):
+#     if n == 1:
+#         return 1
+#     return n + sum_n(n - 1)
 
-# test
-print(sum_n(5))  # Output = 15
+# # test
+# print(sum_n(5))  # Output = 15
+
+#factorial recursion using by recursion 
+
+def fac(num):
+    if num==0 or num==1:
+        return 1
+    return num*fac(num-1)
+
+
 
  
 
