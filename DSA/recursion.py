@@ -49,14 +49,26 @@
 #parameter and factorial recursion 
 #sum of 1 to N
 
-def summation(total, i, n):
-    if i > n:
-        print(total)
-        return
-    summation(total + i, i + 1, n)
+# def summation(total, i, n):
+#     if i > n:
+#         print(total)
+#         return
+#     summation(total + i, i + 1, n)
 
-# call function
-summation(0, 1, 5)   # Output = 15
+# # call function
+# summation(0, 1, 5)   # Output = 15
+
+#fuctional recursion 
+
+def sum_n(n):
+    if n == 1:
+        return 1
+    return n + sum_n(n - 1)
+
+# test
+print(sum_n(5))  # Output = 15
+
+ 
 
 
 
